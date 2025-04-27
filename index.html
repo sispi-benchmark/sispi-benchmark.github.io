@@ -10,5 +10,94 @@
 
 <body class="bg-gray-50 text-gray-800">
 
+  <!-- Hero Section -->
+  <section class="text-center py-10 px-4 bg-gradient-to-r from-blue-50 to-blue-100">
+    <h1 class="text-2xl font-bold text-blue-600 pb-5">SISPI Benchmark</h1>
+    <h2 class="text-4xl font-extrabold mb-4">Social Inclusive Synthetic Professionals Images</h2>
+    <p class="max-w-4xl mx-auto text-lg">A benchmark to measure and understand fairness in cross-modal text-image retrieval models.</p>
+    <!-- <div class="mt-8">
+      <a href="#about" class="px-6 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition">Learn More</a>
+    </div> -->
+  </section>
+
+  <!-- About SISPI -->
+  <section id="about" class="py-10 max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-8">About SISPI</h3>
+    <p class="text-lg text-center max-w-4xl mx-auto mb-6">
+      SISPI (Social Inclusive Synthetic Professionals Images) is a synthetic benchmark designed to systematically measure social bias
+      in text-image retrieval models. Built from 49,664 generated images across 194 professional roles, SISPI ensures a balanced
+      representation across gender and ethnicity demographics.
+    </p>
+    <div class="flex justify-center">
+      <img src="img_samples/nurse_412836.png" alt="SISPI Sample" class="rounded-2xl shadow-lg w-full max-w-4xl">
+    </div>
+  </section>
+
+  <!-- Dataset Details -->
+  <section id="dataset" class="bg-white py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-8">Dataset Details</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-blue-100 p-6 rounded-xl text-center">
+          <h4 class="text-xl font-semibold mb-2">49,664 Images</h4>
+          <p>Covering 194 professions with 2 gender and 4 ethnicity variants.</p>
+        </div>
+        <div class="bg-blue-100 p-6 rounded-xl text-center">
+          <h4 class="text-xl font-semibold mb-2">Stable Diffusion XL</h4>
+          <p>Generated with controlled seeds to minimize non-protected attribute artifacts.</p>
+        </div>
+        <div class="bg-blue-100 p-6 rounded-xl text-center">
+          <h4 class="text-xl font-semibold mb-2">Open Access</h4>
+          <p>Dataset and evaluation framework freely available for research purposes.</p>
+        </div>
+      </div>
+      <p class="text-center text-lg text-gray-700 mt-10">Link to dataset and evaluation code repositories will be available soon.</p>
+    </div>
+  </section>
+
+  <!-- Ethical Considerations -->
+  <section class="py-10 max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-8">Ethical Considerations</h3>
+    <div class="max-w-4xl mx-auto space-y-6 text-lg">
+      <p>
+        In this study, we have adopted broad ethnic categories – "Asian," "White," "Black," and "Latinx" – and gender categories of "Male" and "Female." While these are common in demographic research for their simplicity, they inherently oversimplify complex identities.
+      </p>
+      <p>
+        <strong>Ethnic Categorization:</strong> These categories encompass diverse cultures and histories, and terms like "Asian" oversimplify the rich diversity within each group. They also vary in perception and definition across regions.
+      </p>
+      <p>
+        <strong>Gender Categorization:</strong> The binary gender categories used here do not capture all gender identities. We acknowledge and respect non-binary and transgender identities.
+      </p>
+      <p>
+        <strong>Cultural Sensitivity and Inclusivity:</strong> We approach these classifications with sensitivity and acknowledge their limitations. Individuals' self-identification may be more nuanced, and we are open to feedback for improving our practices.
+      </p>
+      <p>
+        We made efforts to adhere to ethical practices in dataset generation by using consistent initial seeds for different demographic groups, ensuring a roughly equal distribution of unprotected attributes. This approach aims to minimize demographic artifacts and dataset biases. However, we acknowledge that the text-to-image generation model used may still introduce unintended biases that we have not been able to detect through manual inspection.
+      </p>
+    </div>
+  </section>
+
+  <!-- Citation -->
+  <section class="py-10 max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-8">Citation</h3>
+    <div class="bg-gray-100 p-6 rounded-xl overflow-x-auto">
+      <pre><code>@inproceedings{gomez2025sispi,
+  title={Measuring Text-Image Retrieval Fairness with Synthetic Data},
+  author={Lluis Gomez i Bigorda and co-authors},
+  booktitle={Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  year={2025},
+  month={July 13--18},
+  address={Padua, Italy}
+}</code></pre>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer class="bg-white py-6 text-center text-sm text-gray-500">
+    © 2025 SISPI Benchmark. Built with ❤️ for the research community.
+  </footer> -->
+
 </body>
+
 </html>
+
